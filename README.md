@@ -55,11 +55,38 @@ It can be downloaded/loaded using the function `sklearn.datasets.fetch_californi
 - Prediction using test data
 - Compare the predictions x_test with y_test
 
+### Assumptions:
+
+- Test  model to check if is performing well by various assumptions.
+- Plot a scatter plot for the prediction to check linearity
+- Plot w.r.t residuals to check if they are normaly distributed.
+- Another plot is w.r.t predictions and residuals to check if they are uniformly distributed.
+
+### Performance Metrics:
+
+- Cost Function (Mean Squared Error)
+- Mean absolute error
+- R Square and Adjusted R square
+
+### New data prediction:
+
+- Tested the data with new data to check its performance
+
+### Pickling:
+
+- Pickle the regression model to use this for deployment
+
+### Convert the entire project to end-to-end ML project by itself:
+
+- We will create a simple front end application
+- Use Github actions and CI CD pipleline
+- VS code to develop and import the model to Git-hub
+- Deploy the model in cloud Heroku and Docker
+
+### Creating virtual environment in VS code 
 
 Create a new environment for the project
-
 1. conda create -p venv python==3.7 -y
-2. To activate:
-3. conda activate venv/
+2. To activate: conda activate venv/
 4. Create requirements.txt file with all required libraries
 5. Install libraries using pip install -r requirements.txt
